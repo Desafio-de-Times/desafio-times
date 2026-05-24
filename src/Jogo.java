@@ -5,7 +5,7 @@ public class Jogo
     private UUID id;
     private String nome;
     private String desenvolvedora;
-    private BigDecimal preco;
+    private double preco;
 
     public Jogo(String nome){
         this.id = UUID.randomUUID();
@@ -26,7 +26,7 @@ public class Jogo
         return desenvolvedora;
     }
 
-    public BigDecimal getPreco(){
+    public double getPreco(){
         return preco;
     }
 
@@ -38,7 +38,7 @@ public class Jogo
         this.desenvolvedora = desenvolvedora;
     }
 
-    public void setPreco(BigDecimal preco){
+    public void setPreco(double preco){
         this.preco = preco;
     }
 

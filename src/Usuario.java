@@ -52,4 +52,12 @@ public class Usuario
     }
 
 
+  /*  public Jogo getJogo1() {
+        return jogo1;
+    }
+
+    public void setJogo1(String jogo1) {
+        this.jogo1 = jogo1;
+    }
+    */
 }

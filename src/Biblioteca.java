@@ -10,9 +10,9 @@ public class Biblioteca
     private Jogo jogo1;
     private Jogo jogo2;
     private Jogo jogo3;
-    private Usuario usuario1;
-    private Usuario usuario2;
-    private Usuario usuario3;
+    public Usuario usuario1;
+    public Usuario usuario2;
+    public Usuario usuario3;
 
     public Biblioteca(String nomeBibiloteca){
         this.nomeBiblioteca = nomeBiblioteca;
@@ -21,8 +21,14 @@ public class Biblioteca
         this.jogo3 = null;
     }
 
-    public String getNomeBiblioteca(){
+    /*public static String getNomeBiblioteca(){
         return nomeBiblioteca;
+    }*/
+    public String toString(){
+        return "\f Nome da biblioteca: " + nomeBiblioteca +
+                "\n Jogo 1: " + jogo1 +
+                "\n Jogo 3: " + jogo2 +
+                "\n Jogo 2: " + jogo3;
     }
 
     public String setNomeBiblioteca(String nomeBiblioteca){
@@ -51,5 +57,16 @@ public class Biblioteca
 
     public Jogo getJogo3(){
         return jogo3;
+    }
+
+    public void setJogo1(Jogo nome){
+        this.jogo1 = nome;
+    }
+
+    public void setJogo2(Jogo nome){
+        this.jogo2 = nome;
+    }
+    public void setJogo3(Jogo nome){
+        this.jogo3 = nome;
     }
 }
